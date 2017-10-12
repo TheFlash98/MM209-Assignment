@@ -25,6 +25,5 @@ def main():
 	plt.plot(x,xCO,"-")
 	plt.show()
 
-			
 if __name__ == "__main__":
     main()
