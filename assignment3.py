@@ -14,9 +14,15 @@ def main():
 	plt.figure()
 	CS = plt.contour(X, Y, A)
 	plt.clabel(CS, inline=1, fontsize=10)
-	plt.title('Simplest default with labels')
-	plt.ylabel('X_CO2')
+	plt.title('pO2 Contours')
+	plt.ylabel('X_CO')
 	plt.xlabel('Temperature')
+	plt.show()
+
+	k = np.exp((-166500+(171.1*x))/(8.314*x))
+	xCO = -1*k + np.sqrt(k*k + 4*k)
+	xCO = xCO/2
+	plt.plot(x,xCO,"-")
 	plt.show()
 
 			
