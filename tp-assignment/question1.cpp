@@ -16,6 +16,6 @@ int main() {
 	for(int i = 0; i<=1200; i++){
 		centreTemperatue.push_back(tI);
 		myfile << i/60.0 << " " << centreTemperatue[i] << " "<<endl;
-		tI = tI + (h/(cp*d))*(tInfinity - tI);
+		tI = tI + (2*h/(cp*d))*(tInfinity - tI);
 	}
 }
